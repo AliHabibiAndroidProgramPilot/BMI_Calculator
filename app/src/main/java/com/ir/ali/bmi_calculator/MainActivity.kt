@@ -3,6 +3,9 @@ package com.ir.ali.bmi_calculator
 import android.graphics.Color
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
+import android.widget.SeekBar
+import android.widget.Toast
 import com.ir.ali.bmi_calculator.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
@@ -28,5 +31,17 @@ class MainActivity : AppCompatActivity() {
             binding.maleCard.animate().scaleY(1f).duration = 300
             binding.maleCard.animate().scaleX(1f).duration = 300
         }
+        binding.heightSeekbar.setOnSeekBarChangeListener(object: SeekBar.OnSeekBarChangeListener{
+            override fun onProgressChanged(seekBar: SeekBar?, progress: Int, fromUser: Boolean) {
+                binding.heightNumber.text = "$progress"
+            }
+
+            override fun onStartTrackingTouch(p0: SeekBar?) {
+            }
+
+            override fun onStopTrackingTouch(p0: SeekBar?) {
+            }
+
+        })
     }
 }

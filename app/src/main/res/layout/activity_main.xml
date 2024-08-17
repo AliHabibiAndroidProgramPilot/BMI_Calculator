@@ -106,6 +106,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"/>
         <TextView
+            android:id="@+id/height_number"
             android:textColor="@color/white"
             android:layout_marginTop="57dp"
             android:layout_marginEnd="111dp"
@@ -120,8 +121,8 @@
             android:textColor="@color/white"
             android:text="@string/centimeters"
             android:layout_marginTop="85dp"
-            android:layout_marginEnd="111dp"
-            android:layout_marginStart="180dp"
+            android:layout_marginEnd="100dp"
+            android:layout_marginStart="195dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"/>
         <SeekBar
