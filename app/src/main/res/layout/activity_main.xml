@@ -2,9 +2,9 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:background="@color/background"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/background"
     tools:context=".MainActivity">
 
     <include
@@ -18,32 +18,34 @@
         android:layout_marginStart="21dp"
         android:layout_marginTop="70dp"
         android:layout_marginEnd="184dp"
+        app:cardBackgroundColor="@color/toolbar"
         app:cardCornerRadius="12dp"
         app:cardElevation="15dp"
-        app:cardBackgroundColor="@color/toolbar"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
+
         <ImageView
-            android:src="@drawable/male"
-            android:contentDescription="@string/male_img"
-            android:scaleType="fitCenter"
-            android:paddingEnd="6dp"
-            android:paddingStart="5dp"
-            android:paddingBottom="36dp"
-            android:layout_gravity="center"
             android:layout_width="144dp"
-            android:layout_height="144dp"/>
+            android:layout_height="144dp"
+            android:layout_gravity="center"
+            android:contentDescription="@string/male_img"
+            android:paddingStart="5dp"
+            android:paddingEnd="6dp"
+            android:paddingBottom="36dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/male" />
+
         <TextView
-            android:textSize="20sp"
-            android:text="@string/male"
-            android:textColor="@color/colorOnSecondary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:layout_marginStart="52dp"
+            android:layout_marginTop="139dp"
             android:layout_marginEnd="57dp"
             android:layout_marginBottom="17dp"
-            android:layout_marginTop="139dp"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"/>
+            android:text="@string/male"
+            android:textColor="@color/colorOnSecondary"
+            android:textSize="20sp" />
     </androidx.cardview.widget.CardView>
 
     <androidx.cardview.widget.CardView
@@ -53,89 +55,217 @@
         android:layout_marginStart="185dp"
         android:layout_marginTop="70dp"
         android:layout_marginEnd="20dp"
-        app:cardCornerRadius="12dp"
-        app:cardElevation="15dp"
-        android:scaleY="1.1"
         android:scaleX="1.1"
+        android:scaleY="1.1"
         android:translationX="6dp"
         app:cardBackgroundColor="@color/colorPrimary"
+        app:cardCornerRadius="12dp"
+        app:cardElevation="15dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
+
         <ImageView
-            android:src="@drawable/female"
-            android:contentDescription="@string/female_img"
-            android:scaleType="fitCenter"
-            android:paddingEnd="6dp"
-            android:paddingStart="5dp"
-            android:paddingBottom="36dp"
-            android:layout_gravity="center"
             android:layout_width="144dp"
-            android:layout_height="144dp"/>
+            android:layout_height="144dp"
+            android:layout_gravity="center"
+            android:contentDescription="@string/female_img"
+            android:paddingStart="5dp"
+            android:paddingEnd="6dp"
+            android:paddingBottom="36dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/female" />
+
         <TextView
-            android:text="@string/female"
-            android:textSize="20sp"
-            android:textColor="@color/colorOnSecondary"
-            android:layout_marginTop="139dp"
-            android:layout_marginBottom="17dp"
-            android:layout_marginStart="41dp"
-            android:layout_marginEnd="46dp"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"/>
+            android:layout_height="wrap_content"
+            android:layout_marginStart="41dp"
+            android:layout_marginTop="139dp"
+            android:layout_marginEnd="46dp"
+            android:layout_marginBottom="17dp"
+            android:text="@string/female"
+            android:textColor="@color/colorOnSecondary"
+            android:textSize="20sp" />
     </androidx.cardview.widget.CardView>
 
     <androidx.cardview.widget.CardView
         android:layout_width="319dp"
         android:layout_height="189dp"
         android:layout_marginStart="21dp"
-        android:layout_marginTop="275dp"
+        android:layout_marginTop="266dp"
         android:layout_marginEnd="20dp"
+        app:cardBackgroundColor="@color/toolbar"
         app:cardCornerRadius="12dp"
         app:cardElevation="15dp"
-        app:cardBackgroundColor="@color/toolbar"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.49"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
+
         <TextView
-            android:textSize="20sp"
-            android:textColor="@color/colorOnSecondary"
-            android:text="@string/height"
-            android:layout_marginTop="27dp"
-            android:layout_marginStart="128dp"
-            android:layout_marginEnd="129dp"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"/>
+            android:layout_height="wrap_content"
+            android:layout_marginStart="128dp"
+            android:layout_marginTop="27dp"
+            android:layout_marginEnd="129dp"
+            android:text="@string/height"
+            android:textColor="@color/colorOnSecondary"
+            android:textSize="20sp" />
+
         <TextView
             android:id="@+id/height_number"
-            android:textColor="@color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="113dp"
             android:layout_marginTop="57dp"
             android:layout_marginEnd="111dp"
-            android:layout_marginStart="113dp"
             android:layout_marginBottom="84dp"
-            android:textSize="40sp"
-            android:textStyle="bold"
             android:text="@string/input_height_number"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"/>
-        <TextView
             android:textColor="@color/white"
-            android:text="@string/centimeters"
+            android:textSize="40sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="195dp"
             android:layout_marginTop="85dp"
             android:layout_marginEnd="100dp"
-            android:layout_marginStart="195dp"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"/>
+            android:text="@string/centimeters"
+            android:textColor="@color/white" />
+
         <SeekBar
             android:id="@+id/height_seekbar"
-            android:max="300"
-            android:progress="150"
-            android:progressBackgroundTint="@color/white"
-            android:progressBackgroundTintMode="screen"
-            android:layout_marginBottom="64dp"
-            android:layout_marginTop="125dp"
-            android:layout_marginStart="24dp"
-            android:layout_marginEnd="25dp"
             android:layout_width="match_parent"
-            android:layout_height="30dp"/>
+            android:layout_height="30dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="125dp"
+            android:layout_marginEnd="25dp"
+            android:layout_marginBottom="64dp"
+            android:max="250"
+            android:progress="125"
+            android:progressBackgroundTint="@color/white"
+            android:progressBackgroundTintMode="screen" />
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="155dp"
+        android:layout_height="180dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginEnd="180dp"
+        android:layout_marginBottom="35dp"
+        app:cardBackgroundColor="@color/toolbar"
+        app:cardCornerRadius="12dp"
+        app:cardElevation="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="15dp"
+            android:text="@string/weight"
+            android:textColor="@color/colorOnSecondary"
+            android:textSize="20sp" />
+        <TextView
+            android:id="@+id/weight_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/weight_number"
+            android:textColor="@color/white"
+            android:textSize="40sp"
+            android:textStyle="bold" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/weight_decrease"
+            app:fabSize="mini"
+            android:contentDescription="@string/weight_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginStart="16dp"
+            android:layout_marginBottom="25dp"
+            android:src="@drawable/ic_remove"
+            app:tint="@android:color/white"
+            app:backgroundTint="@color/colorOnSecondary"
+            app:rippleColor="@color/black"
+            app:elevation="8dp" />
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/weight_add"
+            app:fabSize="mini"
+            android:contentDescription="@string/weight_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+            android:layout_marginEnd="25dp"
+            android:layout_marginBottom="25dp"
+            android:src="@drawable/ic_add"
+            app:tint="@android:color/white"
+            app:backgroundTint="@color/colorOnSecondary"
+            app:rippleColor="@color/black"
+            app:elevation="8dp" />
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="155dp"
+        android:layout_height="180dp"
+        android:layout_marginStart="189dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="35dp"
+        app:cardBackgroundColor="@color/toolbar"
+        app:cardCornerRadius="12dp"
+        app:cardElevation="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="15dp"
+            android:text="@string/age"
+            android:textColor="@color/colorOnSecondary"
+            android:textSize="20sp" />
+        <TextView
+            android:id="@+id/age_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/age_number"
+            android:textColor="@color/white"
+            android:textSize="40sp"
+            android:textStyle="bold" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/age_decrease"
+            app:fabSize="mini"
+            android:contentDescription="@string/weight_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginStart="16dp"
+            android:layout_marginBottom="25dp"
+            android:src="@drawable/ic_remove"
+            app:tint="@android:color/white"
+            app:backgroundTint="@color/colorOnSecondary"
+            app:rippleColor="@color/black"
+            app:elevation="8dp" />
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/age_add"
+            app:fabSize="mini"
+            android:contentDescription="@string/weight_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+            android:layout_marginEnd="25dp"
+            android:layout_marginBottom="25dp"
+            android:src="@drawable/ic_add"
+            app:tint="@android:color/white"
+            app:backgroundTint="@color/colorOnSecondary"
+            app:rippleColor="@color/black"
+            app:elevation="8dp" />
     </androidx.cardview.widget.CardView>
 </androidx.constraintlayout.widget.ConstraintLayout>
