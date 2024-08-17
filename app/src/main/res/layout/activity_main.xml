@@ -9,6 +9,7 @@
     <include layout="@layout/toolbar"/>
 
     <androidx.cardview.widget.CardView
+        android:id="@+id/male_card"
         android:layout_width="155dp"
         android:layout_height="180dp"
         android:layout_marginStart="21dp"
@@ -43,6 +44,7 @@
     </androidx.cardview.widget.CardView>
 
     <androidx.cardview.widget.CardView
+        android:id="@+id/female_card"
         android:layout_width="155dp"
         android:layout_height="180dp"
         android:layout_marginStart="185dp"
@@ -50,6 +52,9 @@
         android:layout_marginEnd="20dp"
         app:cardCornerRadius="12dp"
         app:cardElevation="15dp"
+        android:scaleY="1.1"
+        android:scaleX="1.1"
+        android:translationX="6dp"
         app:cardBackgroundColor="@color/colorPrimary"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

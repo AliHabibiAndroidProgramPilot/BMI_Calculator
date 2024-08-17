@@ -1,5 +1,6 @@
 package com.ir.ali.bmi_calculator
 
+import android.graphics.Color
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.ir.ali.bmi_calculator.databinding.ActivityMainBinding
@@ -10,5 +11,22 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
+        binding.maleCard.setOnClickListener {
+            binding.maleCard.setCardBackgroundColor(Color.rgb(51, 50, 68))
+            binding.femaleCard.setCardBackgroundColor(Color.rgb(36, 38, 59))
+            binding.maleCard.animate().scaleX(1.1f).duration = 300
+            binding.maleCard.animate().scaleY(1.1f).duration = 300
+            binding.maleCard.animate().translationX(-10f)
+            binding.femaleCard.animate().scaleY(1f).duration = 300
+            binding.femaleCard.animate().scaleX(1f).duration = 300
+        }
+        binding.femaleCard.setOnClickListener {
+            binding.maleCard.setCardBackgroundColor(Color.rgb(36, 38, 59))
+            binding.femaleCard.setCardBackgroundColor(Color.rgb(51, 50, 68))
+            binding.femaleCard.animate().scaleX(1.1f).duration = 300
+            binding.femaleCard.animate().scaleY(1.1f).duration = 300
+            binding.maleCard.animate().scaleY(1f).duration = 300
+            binding.maleCard.animate().scaleX(1f).duration = 300
+        }
     }
 }
