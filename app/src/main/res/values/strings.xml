@@ -4,4 +4,7 @@
     <string name="female_img">female_img</string>
     <string name="male">Male</string>
     <string name="female">Female</string>
+    <string name="height">Height</string>
+    <string name="input_height_number">150</string>
+    <string name="centimeters">cm</string>
 </resources>
