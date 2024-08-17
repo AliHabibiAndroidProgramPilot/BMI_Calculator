@@ -6,7 +6,73 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
-
     <include layout="@layout/toolbar"/>
 
+    <androidx.cardview.widget.CardView
+        android:layout_width="155dp"
+        android:layout_height="180dp"
+        android:layout_marginStart="21dp"
+        android:layout_marginTop="70dp"
+        android:layout_marginEnd="184dp"
+        app:cardCornerRadius="12dp"
+        app:cardElevation="15dp"
+        app:cardBackgroundColor="@color/toolbar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+        <ImageView
+            android:src="@drawable/male"
+            android:contentDescription="@string/male_img"
+            android:scaleType="fitCenter"
+            android:paddingEnd="6dp"
+            android:paddingStart="5dp"
+            android:paddingBottom="36dp"
+            android:layout_gravity="center"
+            android:layout_width="144dp"
+            android:layout_height="144dp"/>
+        <TextView
+            android:textSize="20sp"
+            android:text="@string/male"
+            android:textColor="@color/colorOnSecondary"
+            android:layout_marginStart="52dp"
+            android:layout_marginEnd="57dp"
+            android:layout_marginBottom="17dp"
+            android:layout_marginTop="139dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="155dp"
+        android:layout_height="180dp"
+        android:layout_marginStart="185dp"
+        android:layout_marginTop="70dp"
+        android:layout_marginEnd="20dp"
+        app:cardCornerRadius="12dp"
+        app:cardElevation="15dp"
+        app:cardBackgroundColor="@color/colorPrimary"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+        <ImageView
+            android:src="@drawable/female"
+            android:contentDescription="@string/female_img"
+            android:scaleType="fitCenter"
+            android:paddingEnd="6dp"
+            android:paddingStart="5dp"
+            android:paddingBottom="36dp"
+            android:layout_gravity="center"
+            android:layout_width="144dp"
+            android:layout_height="144dp"/>
+        <TextView
+            android:text="@string/female"
+            android:textSize="20sp"
+            android:textColor="@color/colorOnSecondary"
+            android:layout_marginTop="139dp"
+            android:layout_marginBottom="17dp"
+            android:layout_marginStart="41dp"
+            android:layout_marginEnd="46dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </androidx.cardview.widget.CardView>
 </androidx.constraintlayout.widget.ConstraintLayout>

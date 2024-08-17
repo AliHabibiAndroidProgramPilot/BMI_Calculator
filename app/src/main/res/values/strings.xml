@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">BMI Calculator</string>
+    <string name="male_img">male_img</string>
+    <string name="female_img">female_img</string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
 </resources>
