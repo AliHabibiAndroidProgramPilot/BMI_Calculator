@@ -270,9 +270,9 @@
     </androidx.cardview.widget.CardView>
 
     <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/calculate_bottom"
         android:layout_width="match_parent"
         android:layout_height="50dp"
-
         android:background="@drawable/calculate_button_corners"
         android:text="@string/calculate"
         android:textColor="@color/white"
@@ -281,4 +281,15 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/fragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout="@layout/support_simple_spinner_dropdown_item"/>
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -4,6 +4,7 @@ import android.annotation.SuppressLint
 import android.graphics.Color
 import android.os.Bundle
 import android.os.Handler
+import android.view.View
 import android.widget.SeekBar
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
@@ -76,7 +77,9 @@ class MainActivity : AppCompatActivity() {
             consistIncrease(binding.ageNumber, binding.ageAdd)
             true
         }
-
+        binding.calculateBottom.setOnClickListener {
+            binding.fragment.visibility = View.VISIBLE
+        }
     }
 
     private val handler = Handler()
