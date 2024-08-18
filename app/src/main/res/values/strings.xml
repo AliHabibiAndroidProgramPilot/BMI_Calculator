@@ -11,4 +11,5 @@
     <string name="weight_number">75</string>
     <string name="age">Age</string>
     <string name="age_number">30</string>
+    <string name="calculate">Calculate</string>
 </resources>
