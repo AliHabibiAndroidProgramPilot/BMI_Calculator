@@ -35,5 +35,5 @@ I welcome contributions from the community! Feel free to fork the repository, ma
 
 *This app is for informational purposes only and should not be used as a substitute for professional medical advice.*
 
-![App ScreenShots](https://ibb.co/SRn5r6n)
-![App ScreenShots](https://ibb.co/f4G2Ltd))
+[![Screenshot-20240820-142005.png](https://i.postimg.cc/zGK2ySBN/Screenshot-20240820-142005.png)](https://postimg.cc/4Y4QMcV2)
+[![Screenshot-20240820-142015.png](https://i.postimg.cc/HLtS2YXP/Screenshot-20240820-142015.png)](https://postimg.cc/B8XcZGhx)
