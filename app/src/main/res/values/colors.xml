@@ -12,4 +12,8 @@
     <color name="colorOnSecondary">#8b8c9e</color>
     <color name="background">#1c2135</color>
     <color name="toolbar">#24263b</color>
+    <color name="green">#21BF73</color>
+    <color name="transparent_green">#4021BF73</color>
+    <color name="yellow">#F9A900</color>
+    <color name="red">#9B2423</color>
 </resources>

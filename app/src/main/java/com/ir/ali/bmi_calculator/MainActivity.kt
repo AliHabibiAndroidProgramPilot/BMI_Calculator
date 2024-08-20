@@ -1,6 +1,7 @@
 package com.ir.ali.bmi_calculator
 
 import android.annotation.SuppressLint
+import android.content.Intent
 import android.graphics.Color
 import android.os.Bundle
 import android.os.Handler
@@ -78,7 +79,6 @@ class MainActivity : AppCompatActivity() {
             true
         }
         binding.calculateBottom.setOnClickListener {
-            binding.fragment.visibility = View.VISIBLE
         }
     }
 
