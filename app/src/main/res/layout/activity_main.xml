@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    tools:context=".MainActivity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:background="@color/background"
     android:orientation="vertical"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    tools:context=".MainActivity">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="0.9"
         android:layout_gravity="center"
+        android:layout_weight="0.9"
         android:background="@color/background"
         tools:context=".MainActivity">
 
@@ -22,17 +22,17 @@
 
         <androidx.cardview.widget.CardView
             android:id="@+id/male_card"
-            android:layout_width="155dp"
-            android:layout_height="180dp"
-            android:layout_marginStart="21dp"
-            android:layout_marginTop="50dp"
-            android:layout_marginEnd="184dp"
             app:cardBackgroundColor="@color/toolbar"
             app:cardCornerRadius="12dp"
             app:cardElevation="15dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent">
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_width="155dp"
+            android:layout_height="180dp"
+            android:layout_marginStart="21dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginEnd="184dp">
 
             <ImageView
                 android:layout_width="144dp"
@@ -59,6 +59,12 @@
 
         <androidx.cardview.widget.CardView
             android:id="@+id/female_card"
+            app:cardBackgroundColor="@color/colorPrimary"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="15dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
             android:layout_width="155dp"
             android:layout_height="180dp"
             android:layout_marginStart="185dp"
@@ -66,13 +72,7 @@
             android:layout_marginEnd="20dp"
             android:scaleX="1.1"
             android:scaleY="1.1"
-            android:translationX="6dp"
-            app:cardBackgroundColor="@color/colorPrimary"
-            app:cardCornerRadius="12dp"
-            app:cardElevation="15dp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent">
+            android:translationX="6dp">
 
             <ImageView
                 android:layout_width="144dp"
@@ -98,18 +98,18 @@
         </androidx.cardview.widget.CardView>
 
         <androidx.cardview.widget.CardView
-            android:layout_width="319dp"
-            android:layout_height="150dp"
-            android:layout_marginStart="21dp"
-            android:layout_marginTop="250dp"
-            android:layout_marginEnd="20dp"
             app:cardBackgroundColor="@color/toolbar"
             app:cardCornerRadius="12dp"
             app:cardElevation="15dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.49"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent">
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_width="319dp"
+            android:layout_height="150dp"
+            android:layout_marginStart="21dp"
+            android:layout_marginTop="250dp"
+            android:layout_marginEnd="20dp">
 
             <TextView
                 android:layout_width="wrap_content"
@@ -156,17 +156,17 @@
         </androidx.cardview.widget.CardView>
 
         <androidx.cardview.widget.CardView
-            android:layout_width="155dp"
-            android:layout_height="180dp"
-            android:layout_marginStart="25dp"
-            android:layout_marginEnd="180dp"
-            android:layout_marginBottom="20dp"
             app:cardBackgroundColor="@color/toolbar"
             app:cardCornerRadius="12dp"
             app:cardElevation="15dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent">
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_width="155dp"
+            android:layout_height="180dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginEnd="180dp"
+            android:layout_marginBottom="20dp">
 
             <TextView
                 android:layout_width="wrap_content"
@@ -190,47 +190,47 @@
 
             <com.google.android.material.floatingactionbutton.FloatingActionButton
                 android:id="@+id/weight_decrease"
+                app:backgroundTint="@color/colorOnSecondary"
+                app:elevation="8dp"
+                app:fabSize="mini"
+                app:rippleColor="@color/black"
+                app:tint="@android:color/white"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="bottom"
                 android:layout_marginStart="16dp"
                 android:layout_marginBottom="25dp"
                 android:contentDescription="@string/weight_number"
-                android:src="@drawable/ic_remove"
+                android:src="@drawable/ic_remove" />
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/weight_add"
                 app:backgroundTint="@color/colorOnSecondary"
                 app:elevation="8dp"
                 app:fabSize="mini"
                 app:rippleColor="@color/black"
-                app:tint="@android:color/white" />
-
-            <com.google.android.material.floatingactionbutton.FloatingActionButton
-                android:id="@+id/weight_add"
+                app:tint="@android:color/white"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="bottom|end"
                 android:layout_marginEnd="25dp"
                 android:layout_marginBottom="25dp"
                 android:contentDescription="@string/weight_number"
-                android:src="@drawable/ic_add"
-                app:backgroundTint="@color/colorOnSecondary"
-                app:elevation="8dp"
-                app:fabSize="mini"
-                app:rippleColor="@color/black"
-                app:tint="@android:color/white" />
+                android:src="@drawable/ic_add" />
         </androidx.cardview.widget.CardView>
 
         <androidx.cardview.widget.CardView
-            android:layout_width="155dp"
-            android:layout_height="180dp"
-            android:layout_marginStart="189dp"
-            android:layout_marginEnd="16dp"
-            android:layout_marginBottom="20dp"
             app:cardBackgroundColor="@color/toolbar"
             app:cardCornerRadius="12dp"
             app:cardElevation="15dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent">
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_width="155dp"
+            android:layout_height="180dp"
+            android:layout_marginStart="189dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="20dp">
 
             <TextView
                 android:layout_width="wrap_content"
@@ -254,53 +254,45 @@
 
             <com.google.android.material.floatingactionbutton.FloatingActionButton
                 android:id="@+id/age_decrease"
+                app:backgroundTint="@color/colorOnSecondary"
+                app:elevation="8dp"
+                app:fabSize="mini"
+                app:rippleColor="@color/black"
+                app:tint="@android:color/white"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="bottom"
                 android:layout_marginStart="16dp"
                 android:layout_marginBottom="25dp"
                 android:contentDescription="@string/weight_number"
-                android:src="@drawable/ic_remove"
+                android:src="@drawable/ic_remove" />
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/age_add"
                 app:backgroundTint="@color/colorOnSecondary"
                 app:elevation="8dp"
                 app:fabSize="mini"
                 app:rippleColor="@color/black"
-                app:tint="@android:color/white" />
-
-            <com.google.android.material.floatingactionbutton.FloatingActionButton
-                android:id="@+id/age_add"
+                app:tint="@android:color/white"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="bottom|end"
                 android:layout_marginEnd="25dp"
                 android:layout_marginBottom="25dp"
                 android:contentDescription="@string/weight_number"
-                android:src="@drawable/ic_add"
-                app:backgroundTint="@color/colorOnSecondary"
-                app:elevation="8dp"
-                app:fabSize="mini"
-                app:rippleColor="@color/black"
-                app:tint="@android:color/white" />
+                android:src="@drawable/ic_add" />
         </androidx.cardview.widget.CardView>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
-    <androidx.fragment.app.FragmentContainerView
-        android:visibility="gone"
-        android:layout_weight="9"
-        android:id="@+id/fragment"
-        tools:layout="@layout/support_simple_spinner_dropdown_item"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"/>
-
     <androidx.appcompat.widget.AppCompatButton
-        android:layout_weight="0.01"
         android:id="@+id/calculate_bottom"
         android:layout_width="match_parent"
         android:layout_height="50dp"
+        android:layout_weight="0.01"
         android:background="@drawable/calculate_button_corners"
         android:text="@string/calculate"
+        android:textAllCaps="false"
         android:textColor="@color/white"
-        android:textSize="32sp"
-        android:textAllCaps="false"/>
+        android:textSize="32sp" />
 </LinearLayout>

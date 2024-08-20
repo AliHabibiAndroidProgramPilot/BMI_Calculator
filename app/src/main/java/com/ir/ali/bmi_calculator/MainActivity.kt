@@ -1,7 +1,6 @@
 package com.ir.ali.bmi_calculator
 
 import android.annotation.SuppressLint
-import android.content.Intent
 import android.graphics.Color
 import android.os.Bundle
 import android.os.Handler
@@ -36,7 +35,7 @@ class MainActivity : AppCompatActivity() {
             binding.maleCard.animate().scaleY(1f).duration = 300
             binding.maleCard.animate().scaleX(1f).duration = 300
         }
-        binding.heightSeekbar.setOnSeekBarChangeListener(object: SeekBar.OnSeekBarChangeListener{
+        binding.heightSeekbar.setOnSeekBarChangeListener(object : SeekBar.OnSeekBarChangeListener {
             override fun onProgressChanged(seekBar: SeekBar?, progress: Int, fromUser: Boolean) {
                 binding.heightNumber.text = "$progress"
             }
@@ -81,14 +80,13 @@ class MainActivity : AppCompatActivity() {
         binding.calculateBottom.setOnClickListener {
         }
     }
-
     private val handler = Handler()
     private val delayMillis: Long = 100
 
     private fun consistIncrease(textView: TextView, button: FloatingActionButton) {
         var runnable: Runnable? = null
         runnable = Runnable {
-            if(button.isPressed) {
+            if (button.isPressed) {
                 val tempNumber = textView.text.toString().toInt()
                 val tempText = tempNumber.plus(1).toString()
                 handler.postDelayed(runnable!!, delayMillis)
@@ -101,7 +99,7 @@ class MainActivity : AppCompatActivity() {
     private fun consistDecrease(textView: TextView, button: FloatingActionButton) {
         var runnable: Runnable? = null
         runnable = Runnable {
-            if(button.isPressed) {
+            if (button.isPressed) {
                 val tempNumber = textView.text.toString().toInt()
                 val tempText = tempNumber.minus(1).toString()
                 handler.postDelayed(runnable!!, delayMillis)

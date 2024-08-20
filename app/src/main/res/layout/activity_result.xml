@@ -68,6 +68,20 @@
     </androidx.cardview.widget.CardView>
 
     <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/re_calculate"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/calculate_button_corners"
+        android:text="@string/re_calculate"
+        android:textColor="@color/white"
+        android:textSize="32sp"
+        android:layout_alignParentBottom="true"
+        android:textAllCaps="false"/>
+
+
+    <!--
+
+    <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/re_calculate_bottom"
         android:layout_gravity="bottom"
         android:layout_width="match_parent"
@@ -78,4 +92,5 @@
         android:textColor="@color/white"
         android:textSize="32sp"
         android:textAllCaps="false"/>
+        -->
 </RelativeLayout>
