@@ -1,10 +1,10 @@
 package com.ir.ali.bmi_calculator
 
 import android.annotation.SuppressLint
+import android.content.Intent
 import android.graphics.Color
 import android.os.Bundle
 import android.os.Handler
-import android.view.View
 import android.widget.SeekBar
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
@@ -78,8 +78,13 @@ class MainActivity : AppCompatActivity() {
             true
         }
         binding.calculateBottom.setOnClickListener {
+            val intent = Intent(this, ResultActivity::class.java)
+            intent.putExtra("height", binding.heightNumber.text.toString().toInt())
+            intent.putExtra("weight", binding.weightNumber.text.toString().toInt())
+            startActivity(intent)
         }
     }
+    @Suppress("DEPRECATION")
     private val handler = Handler()
     private val delayMillis: Long = 100
 

@@ -14,6 +14,6 @@
     <color name="toolbar">#24263b</color>
     <color name="green">#21BF73</color>
     <color name="transparent_green">#4021BF73</color>
-    <color name="yellow">#F9A900</color>
-    <color name="red">#9B2423</color>
+    <color name="transparent_yellow">#40F9A900</color>
+    <color name="transparent_red">#409B2423</color>
 </resources>
