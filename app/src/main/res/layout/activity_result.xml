@@ -42,7 +42,7 @@
             android:layout_gravity="center_horizontal"
             android:layout_marginTop="67dp"
             android:background="@drawable/green_statement"
-            android:text="@string/normal"
+            tools:text="@string/normal"
             android:textColor="@color/green"
             android:textSize="25sp"
             android:textStyle="bold"
@@ -54,7 +54,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
             android:layout_marginTop="124dp"
-            android:text="@string/bmi_index"
+            tools:text="@string/bmi_index"
             android:textColor="@color/white"
             android:textSize="64sp"
             android:textStyle="bold" />
@@ -66,7 +66,7 @@
             android:gravity="center"
             android:layout_gravity="bottom|center"
             android:layout_marginBottom="85dp"
-            android:text="@string/bmi_explanation"
+            tools:text="@string/bmi_explanation"
             android:textColor="@color/colorOnSecondary"
             android:textSize="16sp" />
     </androidx.cardview.widget.CardView>
